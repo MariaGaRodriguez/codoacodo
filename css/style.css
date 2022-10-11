@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+/*NAV*/
+header{
+   position: fixed;
+   z-index: 1;
+   margin-top: 0;   
+   width: 100%;
+}
+a{
+   text-decoration: none;
+}
+nav{
+    background-color:#5584ac;
+    height: 160px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 50px;
+}
+.logo{
+    height: 130px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 140px;
+    margin: 0 5px;
+}
+ nav ul li a{
+    color: antiquewhite;
+    font-size: 20px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+ }
+ li a.active, li a:hover{
+    background-color: #0c3142;
+    transition: .5s;
+    color: #fff;
+ }
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 140px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*---------------------------------------------------*/
+/*slider*/
+.slider{
+    position: absolute;
+    margin-top: 160px;
+    z-index: 0;
+    width: 100%;
+}
+.slider-text{
+    color: rgb(5, 27, 27);
+    font-weight: bold;
+    background-size: auto;
+}
+.box-text{
+    position: absolute;
+    display: table;
+    text-align: center;
+    left: 30%;
+    background-color: rgba(255,255,255,0.6);
+    width: auto;
+    max-width: 600px;
+    height: 200px;
+    top: 35%;
+    border-bottom: solid 6px #21247f;
+    padding: 30px;
+}
+/*----------------------------------------------*/
+.prueba{
+    position: absolute;
+    
+}
+
+/*MEDIA QUERIES*/
+@media (max-width:1200px){
+    .enlace{
+        padding-left: 15px;
+    }
+    nav ul li a{
+        font-size: 14px;
+    }
+}
+@media (max-width:830px){
+    .checkbtn{
+        display: block;
+    }
+    header{
+        position: absolute;
+        z-index: 1;
+    }
+
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:#5584ac;
+        top: 160px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li  {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a.active, li a:hover{
+        background-color: #0c3142;
+        font-size: 25px;
+        transition: .6s;
+    } 
+     #check:checked ~ ul {
+        left: 0;
+     }
+}
+/*slider*/
+@media only screen and (max-width: 352px){
+    .box-text{ 
+    display: none;        
+    }
+}
