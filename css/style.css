@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 
-body{
+body {
     background-color: rgb(213, 221, 238);
     font-family: 'Roboto', sans-serif;
 }  
+h1, h2,h3, p{
+    font-family: 'Roboto', sans-serif;
+}
 /*style NAV*/
 nav{
     background-color: rgb(14, 50, 88);
-    height: 160px;
+    height: 140px;
     color: white;
 }
 header{
@@ -43,20 +46,74 @@ header{
     transition: .5s;
     color: rgb(11, 11, 11);
     border-radius: 5px;    
+    text-decoration: none;
 }
 /*-------------------------------------------------*/
 /*carousel*/
-.carousel{
-    position: relative;
-    width: 100%;    
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
 }
-.slider-text{
-    color: rgb(5, 27, 27);
-    font-weight: bold;
-    font-size: 40px;
-    background-size: auto;
-    text-shadow: 5px 5px 5px #6b7d86;
+
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+  
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: linear;
 }
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider li img {
+    width: 100%;
+    height: auto;
+}
+
+@supports (object-fit: cover) {
+    .slider img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+}
+
+@keyframes cambio {
+    0% {
+      margin-left: 0;
+    }
+    20% {
+      margin-left: 0;
+    }
+  
+    25% {
+      margin-left: -100%;
+    }
+    45% {
+      margin-left: -100%;
+    }
+  
+    50% {
+      margin-left: -200%;
+    }
+    70% {
+      margin-left: -200%;
+    }
+  
+    75% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+
 /*-----------fin carousel------------------------------*/
 /*----------section general----------------*/
 .cards{
@@ -79,7 +136,7 @@ header{
 /*-------Section noticias de interes-----------*/
 .sectCards{
     background-color: #94b2c1cc;
-    padding-bottom: 10px;
+    
 }
 .segundaCards {
     background-color: #f7f7f6dc;
@@ -88,27 +145,29 @@ header{
     box-shadow: 0px 4px 10px rgba(9, 9, 9, 0.2);
     cursor: default;
     transition: all 400ms ease;
+    padding-bottom: 20px;
 }
 .segundaCards:hover{
     box-shadow: 5px 5px 20px rgba(9, 9, 9, 0.4) ;
     transform: translateY(-3%);
 }
 .segundaCards p{
-    line-height: 1.4;
+    line-height: 1.5;
 }
 .segundaCards a{
     text-decoration: none;
-    display: inline-block;
     padding: 10px;
     margin: 10px 0;
     color: #0f3c43;
     border: 1px solid #0f3c43;
     border-radius: 4px;
     transition: all 400ms ease;
+
 }
 .segundaCards a:hover{
     background-color: #5e888f;
     color: white;
+    cursor: pointer;
 }
 /*-------------fin noticias--------------------*/
 /*-------------pagina Articulo------------------*/
@@ -117,6 +176,66 @@ header{
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/*----------------------Pagina Nosotros-----------------------*/
+.nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px ;
+    }
+
+.text-nosotros{
+    margin-top: 40px;
+    padding: 30px;
+    
+}
+.imgnosotros{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+} 
+
+/*-------------fin pagina nosotros------------------------*/
+/*---------Contacto-------------------------------*/
+.contact{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+        
+}
+.maps li{
+    list-style: none;
+    font-size: 20px;
+    margin: 15px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.formulario input, textarea{
+    width: 40vw;
+    margin-top: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;  
+}
+
+.formulario input{
+    height: 40px;
+}
+.formulario input:focus, textarea:focus{
+border: 3px solid #1777e5;
+outline: none;
+box-shadow: 3px 0 30px rgba(113, 102, 102, 0.2);
+}
+
+/*------------Fin Pag de contacto---------*/
 /*----------FOOter-----------------*/
 .containerFooter{
     background-color: #092b3a;
@@ -145,8 +264,10 @@ header{
     color: white;
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 /*------------Fin Footer-------------->
+
 /*media queries*/
 /*nav*/
 @media(max-width:1200px){
@@ -172,7 +293,7 @@ header{
     }
 .nav-menu{
     position: fixed;
-    top: 160px;
+    top: 140px;
     bottom: 0;
     background-color: rgb(14, 50, 88);
     width: 100%;
@@ -200,4 +321,24 @@ header{
     }
 }
 /*---------------------------------------------------*/
-
+/*Nosotros*/
+@media(max-width:768px){
+    .nosotros{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 90%;
+        padding: 10px ;
+    }
+    .imgnosotros{
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+/*--------*/
+/*--contacto----*/
+@media(max-width:768px){
+.contact{
+    display: grid;
+    grid-template-columns: 100%;
+}
+}

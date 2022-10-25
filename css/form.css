@@ -1,55 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 
-body{
-    background-color: rgb(213, 221, 238);
-    font-family: 'Roboto', sans-serif;
-}  
-/*style NAV*/
-nav{
-    background-color: rgb(14, 50, 88);
-    height: 160px;
-    color: white;
-}
-header{
-    position: sticky;
-    width: 100%;
-    top: 0;
-    z-index: 1020;
-}
-.nav-container{
-    display: flex;
-    height: 100%;
-    width: 95%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-label, .nav-input{
-    display: none;
-}
-.nav-menu{
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 15px;
-}
-.nav-item{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-.nav-item:hover{
-    background-color: #94c7de;
-    transition: .5s;
-    color: rgb(11, 11, 11);
-    border-radius: 5px;    
-}
-
+/*--------form---------------------------*/
 .container{
     display: inline-block;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: 20px;
- }     
+}     
 
 .form-horizontal{
     width: 100%;
@@ -59,7 +14,6 @@ header{
     padding: 30px, 33px, 60px;
     box-shadow: 0px 35px 44px -22px rgba(0, 0, 0, 0.72);
 }
-
 
 .header-form {
     position: relative;
@@ -72,32 +26,4 @@ header{
     font-size: 35px;
     color: #114d67;
 }
-/*----------FOOter-----------------*/
-.containerFooter{
-    background-color: #092b3a;
-    color: rgb(255, 255, 255);
-    border-top: #ebf7fc solid 2px;
-}
-.logoFooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.listFooter{
-    display: inline;
-    text-align:center;
-    list-style: none;    
-}
-.redesFooter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    margin-top: 30px;
-}
-.derechosFooter{
-    background-color: #114d67;
-    color: white;
-    display: flex;
-    justify-content: center;
-}
+/*-----Fin Form----*/
