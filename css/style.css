@@ -404,7 +404,7 @@ nav .nav-item.link-activo {
 }
 nav .nav-item.link-activo {
   color: #092b3a;
-  padding: 0 1em;
+  padding: 0 0.5em;
   font-weight: bold;
 }
 /* fin NAV ======================================== */
@@ -461,6 +461,9 @@ h4 {
 
 /* index.html -> Noticias de interés */
 
+.noticias-de-interes .noticia-container {
+  width: 100%;
+}
 .noticias-de-interes .noticia {
   background-color: #f7f7f6dc;
   box-shadow: 0px 4px 10px rgba(9, 9, 9, 0.2);
