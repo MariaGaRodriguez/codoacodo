@@ -129,7 +129,7 @@ textarea:focus {
 }
 
 /*------------Fin Pag de contacto---------*/
-/*----------FOOter-----------------*/
+/*----------Footer-----------------*/
 .containerFooter {
   background-color: #092b3a;
   color: rgb(255, 255, 255);
@@ -290,7 +290,8 @@ header {
 /* Tipografía ===================================== */
 
 /* Font Family */
-body {
+body,
+.font-principal {
   font-family: "Roboto", sans-serif;
 }
 
@@ -422,7 +423,8 @@ section.media-seccion {
 /* Encabezados ==================================== */
 h1,
 h2,
-h3,
+h3, 
+.p-h3,
 h4,
 h5,
 h6 {
@@ -437,9 +439,10 @@ h2 {
   font-size: 3.9rem;
   line-height: 4.2rem;
 }
-h3 {
-  font-size: 2rem;
-  line-height: 2.5rem;
+h3,
+.p-h3 {
+  font-size: 2rem !important; 
+  line-height: 2.5rem !important;
 }
 h4 {
   font-size: 1.5rem;
@@ -517,6 +520,187 @@ h4 {
 }
 
 /* Fin nosotros.html -> General */
+
+/* servicios.html -> General */
+.contenedorServiciosEspecialidades {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content:space-around;
+  margin: 20px;
+ 
+} 
+.contenedorServiciosDiagnostico {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content:space-around;
+  margin: 20px;
+ 
+}
+.contenedorServiciosEspecialidades .plantilla,
+.contenedorServiciosDiagnostico .plantilla {
+  background-color: #fff;
+  width: 300px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 10px rgb(49, 74, 141), 6px 6px 20px rgb(100, 131, 190);
+}
+.tipo-de-servicio-profesional-encabezado,
+.tipo-de-diagnostico-encabezado {
+  background: #2523af;
+  height: 100px;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  
+}
+.tipo-de-servicio-profesional-encabezado img,
+.tipo-de-diagnostico-encabezado img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.tipo-de-servicio-profesional-info,
+.tipo-de-diagnostico-info {
+  margin-top: 60px;
+  text-align: center;
+  padding: 10px;
+}
+
+.tipo-de-servicio-profesional-info p,
+.tipo-de-diagnostico-info p {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Fin servicios.html -> General */
+
+/* portal-pacientes.html */
+.login-portal-pacientes .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/gestion\ online.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.login-portal-pacientes .container .ventana {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+  min-width: 380px;
+  max-width: 900px;
+  width: 90%;
+  background-color: #16343be3;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.login-portal-pacientes .container .ventana .login {
+  width: 100%;
+  max-width: 320px;
+  min-width: 320px;
+  padding: 30px 30px 50px 30px;
+  background-color: #0e1e1f;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
+  border-radius: 3px 3px 3px 3px;
+  box-sizing: border-box;
+}
+
+.login-portal-pacientes .container .ventana .login label {
+  display: block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 120%;
+  color:#e0eef5;
+  margin-top: 15px;
+}
+
+.login-portal-pacientes .container .ventana .login input {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 110%;
+  color: #1b262c;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.login-portal-pacientes .container .ventana .login input::placeholder {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #817e7e;
+}
+
+.login-portal-pacientes .container .ventana .login button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 110%;
+  color:#0b1b24;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+  background-color: #c9b9b0;
+  margin-top: 10px;
+}
+.login-portal-pacientes .container .ventana .login button:hover {
+  background-color: #3c4245;
+  color:#dfcdc3;
+}
+
+.login-portal-pacientes .container .ventana .login-info {
+  text-align: center;
+  width: 100%;
+  padding:20px 20px 20px 50px;
+  box-sizing: border-box;
+}
+
+.login-portal-pacientes .container .ventana .login-info .titulo {
+  font-size: 40px;
+  color:#fff;
+}
+
+.login-portal-pacientes .container .ventana .login-info .logo-empresa img {
+  width: 60%;
+}
+
+.login-portal-pacientes .container .ventana .login-info hr {
+border-top: 1px solid #e6dfdc;
+border-bottom: 1px solid #e6dfdc; 
+}
+.login-portal-pacientes .container .ventana .login-info .pie-form {
+  font-size: 90%;
+  text-align: center;    
+  margin-top: 15px;
+}
+
+.login-portal-pacientes .container .ventana .login-info .pie-form a {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.login-portal-pacientes .container .ventana .login-info .pie-form a:hover {
+  color: #7bcbce;
+}
+/* Fin portal-pacientes.html */
 
 /* Fin Contenido secciones ======================== */
 
@@ -596,6 +780,44 @@ h4 {
 
 /* Fin nosotros.html -> General */
 
+/* servicios.html -> General */
+@media (max-width: 1000px){ 
+  .contenedorServiciosDiagnostico {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content:center;
+
+  }
+  .contenedorServiciosEspecialidades .plantilla,
+  .contenedorServiciosDiagnostico .plantilla {
+      background-color: #fff;
+      width: 250px;
+      height: 450px;
+      margin: 8px;
+      border-radius: 12px;
+      box-shadow: 6px 6px 10px rgb(49, 74, 141), 6px 6px 20px rgb(100, 131, 190);
+  }
+}
+@media (max-width: 500px){
+  .contenedorServiciosEspecialidades,
+  .contenedorServiciosDiagnostico {
+      display: grid;
+      grid-template-columns: auto;
+      justify-content:center;
+
+  }
+  .contenedorServiciosEspecialidades .plantilla,
+  .contenedorServiciosDiagnostico .plantilla {
+      background-color: #fff;
+      width: 250px;
+      height: 450px;
+      margin: 8px;
+      border-radius: 12px;
+      box-shadow: 6px 6px 10px rgb(49, 74, 141), 6px 6px 20px rgb(100, 131, 190);
+  }
+}
+/* Fin servicios.html -> General */
+
 /* contacto.html -> General */
 
 @media (max-width: 768px) {
@@ -606,6 +828,35 @@ h4 {
 }
 
 /* Fin contacto.html -> General */
+
+/* portal-pacientes.html */
+
+@media all and (max-width: 775px)
+{
+  .login-portal-pacientes .container .ventana  {
+      flex-direction:column-reverse;
+      min-width: 380px;
+      max-width: 900px;
+      width: 90%;
+      background-color: #5f6769;
+      border-radius: 10px 10px 10px 10px;
+      box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+      padding: 30px;
+      box-sizing: border-box;
+  }
+  
+.login-portal-pacientes .container .ventana .login {
+      margin: 0 auto;
+  }
+  
+  .login-portal-pacientes .container .ventana .login label {
+    text-align: left;
+  }
+  .login-portal-pacientes .container .ventana .login-info {
+      padding:20px 20px 20px 20px;
+  }
+}
+/* Fin portal-pacientes.html */
 
 /* Fin Contenido secciones ======================== */
 

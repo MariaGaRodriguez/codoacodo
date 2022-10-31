@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Centro Medico Omega</title>
+
+  <link rel="icon" href="./img/logofinal.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/servicios.css">
+</head>
+
+<body>
+  <h1 class="ocultar-visualmente">Centro M&eacute;dico Omega. Servicios. Especialidades m&eacute;dicas y diagn&oacute;stico por im&aacute;genes.</h1>
+
+  <header>
+    <nav class="navbar">
+
+      <script>
+        var pagina = "servicios";
+      </script>
+
+      <div class="nav-container">
+        <a href="./index.html">
+          <img clas="logo" src="./img/logofinal.png" alt="logo" width="200" height="auto">
+        </a>
+        <input type="checkbox" id="menu" class="nav-input">
+        <label for="menu" class="nav-label">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-sharp fa-solid fa-x"></i>
+        </label>
+        <div class="nav-menu">
+          <a id="nav-link-index" class="nav-item" href="./index.html">Inicio</a>
+          <a id="nav-link-nosotros" class="nav-item" href="./nosotros.html">Nosotros</a>
+          <a id="nav-link-servicios" class="nav-item" href="./servicios.html">Servicios</a>
+          <a id="nav-link-portal" class="nav-item" href="./portal-pacientes.html">Portal Pacientes</a>
+          <a id="nav-link-contacto" class="nav-item" href="./contacto.html">Contacto</a>
+        </div>
+      </div>
+
+      <script>
+        // Configura la NAV principal
+        var navItem = document.getElementById("nav-link-" + pagina);
+        navItem.classList.add("link-activo");
+      </script>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- Especialidades -->
+    <section class="seccion-grande texto-centrado">
+      <div class="container">
+        <div class="seccion-titulo">
+          <h2>Especialidades m&eacute;dicas</h2>
+        </div>
+
+        <h3 class="my-5"><u>Cardiolog&iacute;a</u></h3>
+        
+        <div class="contenedorServiciosEspecialidades">
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/cardiologia_diaz_fernando.jpg" alt="Fernando Diaz" width="auto">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Fernando Diaz</b></p>
+
+              <p><b>M&eacute;dico Cardi&oacute;logo</b></p>
+              <hr>
+              <p>Atiende: MEDICUS, OMINT, OSDE, SWISS MEDICAL, OSMECON, IOMA, SAMI</p>
+            </div>
+          </div>
+
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/cargiologia_gamburd_armando.jpg" alt="Armando Gamburd">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Armando Gamburd</b></p>
+              <p><b>M&eacute;dico Cardi&oacute;logo</b></p>
+              <hr>
+              <p>Atiende: OMINT, OSDE, SWISS MEDICAL, IOMA, OSPE</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="my-5"><u>Dermatolog&iacute;a</u></h3>
+        
+        <div class="contenedorServiciosEspecialidades">
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/dermatologa_malfetano_noemi.jpg" alt="Noem&iacute; Malfetano" width="auto">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Noem&iacute; Malfetano</b></p>
+
+              <p><b>Dermat&oacute;loga, Cosmeatra</b></p>
+              <hr>
+              <p>Atiende: OSDE, SWISS MEDICAL, MEDIFE</p>
+            </div>
+          </div>
+
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/dermatologa_bazan_sandra.jpg" alt="Sandra Baz&aacute;n">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Sandra Baz&aacute;n</b></p>
+              <p><b>Dermat&oacute;loga pedi&aacute;trica
+              </b></p>
+              <hr>
+              <p>Atiende: OMINT, OSDE, SWISS MEDICAL, IOMA, OSPE</p>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="my-5"><u>Ortopedia y Traumatolog&iacute;a</u></h3>
+        
+        <div class="contenedorServiciosEspecialidades">
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/trauma_cajal_alfredo.jpg" alt="Alfredo Cajal" width="auto">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Alfredo Cajal</b></p>
+
+              <p><b>M&eacute;dico traumat&oacute;logo</b></p>
+              <hr>
+              <p>Atiende: OSDE, SWISS MEDICAL, MEDIFE, OSPE, IOMA</p>
+            </div>
+          </div>
+
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/trauma_raya_ignacio.jpg" alt="Ignacio Raya">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Ignacio Raya</b></p>
+              <p><b>M&eacute;dico traumat&oacute;logo</b></p>
+              <hr>
+              <p>Atiende: OMINT, OSDE, SWISS MEDICAL, PROGRA MEDICOS, ATSA, BCO. PROVINCIA</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="my-5"><u>Cl&iacute;nica M&eacute;dica</u></h3>
+        
+        <div class="contenedorServiciosEspecialidades">
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/clinica_furiar_gustavo.jpg" alt="Gustavo Furiar" width="auto">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Gustavo Furiar</b></p>
+              <p><b>Medico de Familia</b></p>
+              <hr>
+              <p>Atiende: OSDE, SWISS MEDICAL, MEDIFE, OSPE, IOMA. Consuktar otras OO. SS</p>
+            </div>
+          </div>
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/clinico_yarul_marianela.jpg" alt="Marianela Yarul">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Marianela Yarul</b></p>
+              <p><b>M&eacute;dica Cl&iacute;nica</b></p>
+              <hr>
+              <p>Atiende: OSDE, SWISS MEDICAL, OSPE, MEDIFE</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="my-5"><u>Psiquiatr&iacute;a</u></h3>
+        
+        <div class="contenedorServiciosEspecialidades">
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/psiquiatra_budeguer_alejandro.jpg" alt="Alejandro Budeguer" width="auto">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Alejandro Budeguer</b></p>
+              <p><b>Psiquiatra (Psiquiatr&iacute;a integrativa), M&eacute;dico forense </b></p>
+              <hr>
+              <p>Atiende: Consuktar OO. SS</p>
+            </div>
+          </div>
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/psiquiatra_romano_gustavo.jpg" alt="Gustavo Romano">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Gustavo Romano</b></p>
+              <p><b>Psiquiatra - Psicoanalista</b></p>
+              <hr>
+              <p>Atiende: OSDE, SWISS MEDICAL</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="my-5"><u>Endocrinolog&iacute;a</u></h3>
+        
+        <div class="contenedorServiciosEspecialidades">
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/endocrinologa_perez_susana.jpg" alt="Susana Perez Cantur" width="auto">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Susana Perez Cantur</b></p>
+              <p><b>Endocrin&oacute;loga </b></p>
+              <hr>
+              <p>Atiende: OSPE, OSDE, OMINT...</p>
+            </div>
+          </div>
+          <div class="plantilla">
+            <div class="tipo-de-servicio-profesional-encabezado">
+              <img src="./img/seccion-especialidades-medicas/endocrinologa_barrientos_maria.jpg" alt="Mar&iacute;a Esther Barrientos">
+            </div>
+            <div class="tipo-de-servicio-profesional-info">
+              <p class="p-h3"><b>Maria Esther Barrientos</b></p>
+              <p><b>Endocrinolog&iacute;a pedi&aacute;trica</b></p>
+              <hr>
+              <p>Atiende: OSDE, SWISS MEDICAL, OSPE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Especialidades -->
+
+    <!-- Diagnosticos por imagen -->
+    <section class="seccion-grande texto-centrado bg-blanco">
+      <div class="container">
+        <div class="seccion-titulo">
+          <h2><u>Diagn&oacute;stico por Im&aacute;genes</u></h2>
+        </div>
+
+        <div class="contenedorServiciosDiagnostico">
+          <div class="plantilla">
+            <div class="tipo-de-diagnostico-encabezado">
+              <img src="./img/seccion-especialidades-medicas/diag-imagenes/resonancia-magnetica.jpg" alt="Resonancia magn&eacute;tica">
+            </div>
+            <div class="tipo-de-diagnostico-info">
+              <p class="p-h3"><b>Resonancia Magn&eacute;tica</b></p>
+              <hr>
+              <p>El servicio de resonancia magn&eacute;tica nuclear es una prueba diagn&oacute;stica con la que se obtienen im&aacute;genes del interior del cuerpo. </p>
+
+            </div>
+          </div>
+          <div class="plantilla">
+            <div class="tipo-de-diagnostico-encabezado">
+              <img src="./img/seccion-especialidades-medicas/diag-imagenes/tomografia-computada.jpg" alt="Tomograf&iacute;a computada">
+            </div>
+            <div class="tipo-de-diagnostico-info">
+              <p class="p-h3"><b>Tomograf&iacute;a Computada</b></p>
+              <hr>
+              <p>La Tomograf&iacute;a Computada es un estudio de diagn&oacute;stico por im&aacute;genes que utiliza un equipo especial de Rayos X.</p>
+
+            </div>
+          </div>
+          <div class="plantilla">
+            <div class="tipo-de-diagnostico-encabezado">
+              <img src="./img/seccion-especialidades-medicas/diag-imagenes/ecografia.jpg" alt="Ecograf&iacute;a">
+            </div>
+            <div class="tipo-de-diagnostico-info">
+              <p class="p-h3"><b>Ecograf&iacute;as</b></p>
+              <hr>
+              <p>Ecograf&iacute;a General, Ecograf&iacute;a 4D, Ecograf&iacute;a Mamaria</p>
+
+            </div>
+          </div>
+          <div class="plantilla">
+            <div class="tipo-de-diagnostico-encabezado">
+              <img src="./img/seccion-especialidades-medicas/diag-imagenes/mamografia.jpg" alt="Mamograf&iacute;a">
+            </div>
+            <div class="tipo-de-diagnostico-info">
+              <p class="p-h3"><b>Mamograf&iacute;as</b></p>
+              <hr>
+              <p>La mamograf&iacute;a es un tipo de imagen m&eacute;dica especializada que utiliza un sistema de dosis baja de rayos X para visualizar el interior de las mamas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Diagnosticos por imagen -->
+  </main>
+
+  <footer>
+    <div class="container-fluid containerFooter">
+      <div class="row justify-content-around py-3 mt-3">
+        <div class="col-12 col-md-6 col-lg-3 logoFooter pb-2">
+          <a href="#">
+            <img clas="logo" src="./img/logofinal.png" alt="logo" width="200" height="auto" />
+          </a>
+        </div>
+        <div class="horarios-de-atencion col-12 col-md-12 col-lg-3">
+          <div class="row">
+            <h2 class="texto-centrado texto-chico">HORARIOS DE<br>ATENCI&Oacute;N</u></h3>
+          </div>
+          <div class="row">
+            <div class="col-6 texto-centrado">
+              <ul class="">
+                <li class="atencion-dia-semana">LUNES</li>
+                <li class="atencion-dia-semana">MARTES</li>
+                <li class="atencion-dia-semana">MI&Eacute;RCOLES</li>
+                <li class="atencion-dia-semana">JUEVES</li>
+                <li class="atencion-dia-semana">VIERNES</li>
+                <li class="atencion-dia-semana">S&Aacute;BADO</li>
+                <li class="atencion-dia-semana">DOMINGO</li>
+              </ul>
+            </div>
+            <div class="col-6 texto-centrado">
+              <ul class="">
+                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                <li class="atencion-dia-semana">09:00 - 13:00</li>
+                <li class="atencion-dia-semana">CERRADO</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-3 mt-5">
+          <h4 class="texto-centrado mt-3">Nuestras Redes Sociales</h4>
+          <div class="redesFooter pb-2 mx-1">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="./img/icon-facebook.png" alt="facebook" />
+            </a>
+            <a href="https://twitter.com/?lang=es" target="_blank">
+              <img src="./img/icon-twitter.png" alt="twitter" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="./img/icon-instagram.png" alt="instagram" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="./img/icon-whatsapp.png" alt="whatsapp" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="derechosFooter texto-centrado justify-content-center">
+      <p>&copy; 2022 CMO - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>
