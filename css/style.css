@@ -222,6 +222,10 @@ html {
   cursor: default;
 }
 
+.max-ancho-contenedor {
+  max-width: 100% !important;
+}
+
 /* Fin Inicialización entorno ===================== */
 
 /* Elementos de interfase de usuario ============== */
@@ -282,7 +286,6 @@ header {
   display: inline-block;
   text-align: left;
 }
-
 /* Fin Listas */
 
 /* Fin Elementos de interfase de usuario ========== */
@@ -514,9 +517,6 @@ h4 {
   justify-content: center;
   padding: 20px;
   width: 100%;
-}
-.nosotros-img img {
-  max-width: 100%;
 }
 
 /* Fin nosotros.html -> General */
@@ -769,7 +769,6 @@ border-bottom: 1px solid #e6dfdc;
   .nosotros {
     display: grid;
     grid-template-columns: 100%;
-    width: 90%;
     padding: 10px;
   }
   .nosotros-img {
