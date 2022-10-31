@@ -1,156 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Centro Medico Omega</title>
 
-    <link rel="icon" href="./img/logofinal.png">
+    <link rel="icon" href="./img/logofinal.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-<header>
-    <nav class="navbar">
+    <h1 class="ocultar-visualmente">
+        Centro M&eacute;dico Omega. Quienes somos. Misi&oacute;n y valores.
+    </h1>
+    <header>
+        <nav class="navbar">
+            <script>
+                var pagina = "nosotros";
+            </script>
 
-        <script>
-          var pagina = "nosotros";
-        </script>
-        
-        <div class="nav-container">
-          <a href="./index.html">
-            <img clas="logo" src="./img/logofinal.png" alt="logo" width="200" height="auto">
-          </a>
-          <input type="checkbox" id="menu" class="nav-input">
-          <label for="menu" class="nav-label">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-sharp fa-solid fa-x"></i>
-          </label>
-          <div class="nav-menu">
-            <a id="nav-link-index" class="nav-item" href="./index.html">Inicio</a>
-            <a id="nav-link-nosotros" class="nav-item" href="./nosotros.html">Nosotros</a>
-            <a id="nav-link-servicios" class="nav-item" href="./servicios.html">Servicios</a>
-            <a id="nav-link-portal" class="nav-item" href="./portal-pacientes.html">Portal Pacientes</a>
-            <a id="nav-link-contacto" class="nav-item" href="./contacto.html">Contacto</a>
-          </div>
-        </div>
-  
-        <script>
-          // Configura la NAV principal
-          var navItem = document.getElementById("nav-link-"+pagina);  
-          navItem.classList.add("link-activo"); 
-        </script>
-        
-      </nav>
-</header>
-<main>
-<section>
-    <article>
-        <h1 class="text-center mt-4">Nosostros</h1>
-        <div class="nosotros">
-             <div class="text-nosotros">
-                <h2>Un lugar Para todos</h2>
-                <p>Somos un centro de primera calidad en el corazón de Recoleta. Fundado en 1957, el Centro Omega lleva décadas al cuidado
-                    de sus pacientes a partir de un servicio de confianza y cercanía.  </p>
+            <div class="nav-container">
+                <a href="./index.html">
+                    <img clas="logo" src="./img/logofinal.png" alt="logo" width="200" height="auto" />
+                </a>
+                <input type="checkbox" id="menu" class="nav-input" />
+                <label for="menu" class="nav-label">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-sharp fa-solid fa-x"></i>
+                </label>
+                <div class="nav-menu">
+                    <a id="nav-link-index" class="nav-item" href="./index.html">Inicio</a>
+                    <a id="nav-link-nosotros" class="nav-item" href="./nosotros.html">Nosotros</a>
+                    <a id="nav-link-servicios" class="nav-item" href="./servicios.html">Servicios</a>
+                    <a id="nav-link-portal" class="nav-item" href="./portal-pacientes.html">Portal Pacientes</a>
+                    <a id="nav-link-contacto" class="nav-item" href="./contacto.html">Contacto</a>
                 </div>
-                <div class="imgnosotros">
-                    <img src="./img/sala.jpg" alt="sala">
-                </div>
-                <div class="text-nosotros">
-                    <h2>Misión</h2>
-                    <p>Sastifacer las necesidades de nuestros pacientes a travez de nuestros servicios, garantizando los más altos estándares de calidad, eficiencia y competitividad.  </p>
-                    <h2>Valores</h2>
-                    <ul>
-                        <li>Profesionalismo</li>
-                        <li>Honestidad</li>
-                        <li>Calidad de atención</li>
-                        <li>Respeto</li>
-                        <li>Innovación</li>
-                        <li>Trabajo en equipo</li>
-                    </ul>
-                    </div>
-                    <div class="imgnosotros">
-                        <img src="./img/misionvalores.jpg" alt="misionvalores" width="563px">
-                    </div>
-                    <div class="text-nosotros">
-                        <h2>Equipamiento de Última generación</h2>
-                        <p> Contamos con un equipamiento digital de última generación y con softwares especializados de alta precisión en constante evolución y actualización. Estos equipos nos permiten realizar diagnósticos más efectivos. </p>
-                   </div>
-                   <div class="imgnosotros">
-                    <img src="./img/hospital2.jpeg" alt="hospital2" width="563px">
-                   </div>
-        </div>
-    </article>
-</section>
+            </div>
 
-</main>
-<footer>
-    <div class="container-fluid containerFooter">
-      <div class="row justify-content-around py-3 mt-3">
-        <div class="col-12 col-md-6 col-lg-3 logoFooter pb-2">
-          <a href="#">
-            <img clas="logo" src="./img/logofinal.png" alt="logo" width="200" height="auto" />
-          </a>
-        </div>
-        <div class="horarios-de-atencion col-12 col-md-12 col-lg-3">
-          <div class="row">
-            <h2 class="texto-centrado texto-chico">HORARIOS DE<br>ATENCI&Oacute;N</h2>
-          </div>
-          <div class="row">
-            <div class="col-6 texto-centrado">
-              <ul class="">
-                <li class="atencion-dia-semana">LUNES</li>
-                <li class="atencion-dia-semana">MARTES</li>
-                <li class="atencion-dia-semana">MI&Eacute;RCOLES</li>
-                <li class="atencion-dia-semana">JUEVES</li>
-                <li class="atencion-dia-semana">VIERNES</li>
-                <li class="atencion-dia-semana">S&Aacute;BADO</li>
-                <li class="atencion-dia-semana">DOMINGO</li>
-              </ul>
+            <script>
+                // Configura la NAV principal
+                var navItem = document.getElementById("nav-link-" + pagina);
+                navItem.classList.add("link-activo");
+            </script>
+        </nav>
+    </header>
+    <main>
+        <section class="seccion-grande">
+            <div class="container-fluid texto-centrado">
+                <div class="seccion-titulo">
+                    <h2 class="font-600">Centro m&eacute;dico integral</h2>
+                </div>
+
+                <div class="nosotros">
+                    <div class="nosotros-texto">
+                        <h3>Un lugar Para todos</h3>
+                        <p>
+                            Somos un centro de primera calidad en el corazón de Recoleta.
+                            Fundado en 1957, el Centro Omega lleva décadas al cuidado de sus
+                            pacientes a partir de un servicio de confianza y cercanía.
+                        </p>
+                    </div>
+                    <div class="nosotros-img">
+                        <img class="borde-1px-todos borde-redondeado-todos" src="./img/sala.jpg" alt="sala" />
+                    </div>
+                    <div class="nosotros-texto">
+                        <h3>Misión</h3>
+                        <p>
+                            Sastifacer las necesidades de nuestros pacientes a travez de
+                            nuestros servicios, garantizando los más altos estándares de
+                            calidad, eficiencia y competitividad.
+                        </p>
+                        <h3>Valores</h3>
+                        <ul class="lista-centrada">
+                            <li>Profesionalismo</li>
+                            <li>Honestidad</li>
+                            <li>Calidad de atención</li>
+                            <li>Respeto</li>
+                            <li>Innovación</li>
+                            <li>Trabajo en equipo</li>
+                        </ul>
+                    </div>
+                    <div class="nosotros-img">
+                        <img class="borde-1px-todos borde-redondeado-todos" src="./img/misionvalores.jpg" alt="misionvalores" width="563px" />
+                    </div>
+                    <div class="nosotros-texto">
+                        <h3>Equipamiento de Última generación</h3>
+                        <p>
+                            Contamos con un equipamiento digital de última generación y con
+                            softwares especializados de alta precisión en constante
+                            evolución y actualización. Estos equipos nos permiten realizar
+                            diagnósticos más efectivos.
+                        </p>
+                    </div>
+                    <div class="nosotros-img">
+                        <img class="borde-1px-todos borde-redondeado-todos" src="./img/hospital2.jpeg" alt="hospital2" width="563px" />
+                    </div>
+                </div>
             </div>
-            <div class="col-6 texto-centrado">
-              <ul class="">
-                <li class="atencion-dia-semana">09:00 - 21:00</li>
-                <li class="atencion-dia-semana">09:00 - 21:00</li>
-                <li class="atencion-dia-semana">09:00 - 21:00</li>
-                <li class="atencion-dia-semana">09:00 - 21:00</li>
-                <li class="atencion-dia-semana">09:00 - 21:00</li>
-                <li class="atencion-dia-semana">09:00 - 13:00</li>
-                <li class="atencion-dia-semana">CERRADO</li>
-              </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid containerFooter">
+            <div class="row justify-content-around py-3 mt-3">
+                <div class="col-12 col-md-6 col-lg-3 logoFooter pb-2">
+                    <a href="#">
+                        <img clas="logo" src="./img/logofinal.png" alt="logo" width="200" height="auto" />
+                    </a>
+                </div>
+                <div class="horarios-de-atencion col-12 col-md-12 col-lg-3">
+                    <div class="row">
+                        <h2 class="texto-centrado texto-chico">
+                            HORARIOS DE<br />ATENCI&Oacute;N
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 texto-centrado">
+                            <ul class="">
+                                <li class="atencion-dia-semana">LUNES</li>
+                                <li class="atencion-dia-semana">MARTES</li>
+                                <li class="atencion-dia-semana">MI&Eacute;RCOLES</li>
+                                <li class="atencion-dia-semana">JUEVES</li>
+                                <li class="atencion-dia-semana">VIERNES</li>
+                                <li class="atencion-dia-semana">S&Aacute;BADO</li>
+                                <li class="atencion-dia-semana">DOMINGO</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 texto-centrado">
+                            <ul class="">
+                                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                                <li class="atencion-dia-semana">09:00 - 21:00</li>
+                                <li class="atencion-dia-semana">09:00 - 13:00</li>
+                                <li class="atencion-dia-semana">CERRADO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 mt-5">
+                    <h4 class="texto-centrado mt-3">Nuestras Redes Sociales</h4>
+                    <div class="redesFooter pb-2 mx-1">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./img/icon-facebook.png" alt="facebook" />
+                        </a>
+                        <a href="https://twitter.com/?lang=es" target="_blank">
+                            <img src="./img/icon-twitter.png" alt="twitter" />
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./img/icon-instagram.png" alt="instagram" />
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="./img/icon-whatsapp.png" alt="whatsapp" />
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-3 mt-5">
-          <h4 class="texto-centrado mt-3">Nuestras Redes Sociales</h4>
-          <div class="redesFooter pb-2 mx-1">
-            <a href="https://www.facebook.com/" target="_blank">
-              <img src="./img/icon-facebook.png" alt="facebook" />
-            </a>
-            <a href="https://twitter.com/?lang=es" target="_blank">
-              <img src="./img/icon-twitter.png" alt="twitter" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <img src="./img/icon-instagram.png" alt="instagram" />
-            </a>
-            <a href="#" target="_blank">
-              <img src="./img/icon-whatsapp.png" alt="whatsapp" />
-            </a>
-          </div>
+        <div class="derechosFooter texto-centrado justify-content-center">
+            <p>&copy; 2022 CMO - Todos los derechos reservados.</p>
         </div>
-      </div>
-    </div>
-    <div class="derechosFooter texto-centrado justify-content-center">
-      <p>&copy; 2022 CMO - Todos los derechos reservados.</p>
-    </div>
-  </footer>
- 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>   
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
-</html>    
+
+</html>

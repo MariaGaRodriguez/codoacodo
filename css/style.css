@@ -87,24 +87,6 @@
   padding: 2% 10%;
   font-size: 20px;
 }
-/*----------------------Pagina Nosotros-----------------------*/
-.nosotros {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  padding: 20px;
-}
-
-.text-nosotros {
-  margin-top: 40px;
-  padding: 30px;
-}
-.imgnosotros {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-/*-------------fin pagina nosotros------------------------*/
 /*---------Contacto-------------------------------*/
 .contact {
   display: grid;
@@ -294,6 +276,14 @@ header {
 /* Filas y columnas */
 
 /* Fin Filas y columnas */
+
+/* Listas */
+.lista-centrada {
+  display: inline-block;
+  text-align: left;
+}
+
+/* Fin Listas */
 
 /* Fin Elementos de interfase de usuario ========== */
 
@@ -504,6 +494,30 @@ h4 {
 
 /* Fin index.html -> Noticias de interés */
 
+/* nosotros.html -> General */
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+}
+
+.nosotros-texto {
+  margin-top: 40px;
+  padding: 30px;
+}
+.nosotros-img {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+.nosotros-img img {
+  max-width: 100%;
+}
+
+/* Fin nosotros.html -> General */
+
 /* Fin Contenido secciones ======================== */
 
 
@@ -563,28 +577,36 @@ h4 {
 
 /* Fin NAV */
 
-/* página Nosotros */
-/* --------------- */
-@media (max-width: 768px) {
+/* Contenido secciones ============================ */
+
+/* nosotros.html -> General */
+
+@media (max-width: 955px) {
   .nosotros {
     display: grid;
     grid-template-columns: 100%;
     width: 90%;
     padding: 10px;
   }
-  .imgnosotros {
+  .nosotros-img {
     width: auto;
     padding: 10px 20px;
   }
 }
 
-/* página Contacto */
-/* --------------- */
+/* Fin nosotros.html -> General */
+
+/* contacto.html -> General */
+
 @media (max-width: 768px) {
   .contact {
     display: grid;
     grid-template-columns: 100%;
   }
 }
+
+/* Fin contacto.html -> General */
+
+/* Fin Contenido secciones ======================== */
 
 /* Fin RESPONSIVE ==================== */
